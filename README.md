@@ -10,7 +10,8 @@ API en desarrollo con la finalidad de realizar la aplicacion propuesta para el r
 * [JavaSDK8](https://www.java.com/es/download/) - JavaEE 8.
 * [GlassFish](https://javaee.github.io/glassfish/) - GlassFish.
 
-## Autor.
+## Participantes..
 
 * **Jose Cedeno** - [Jafjdev](https://github.com/jafjdev/)
 * **Ramiro Vargas** - [Ramiroavch](https://github.com/ramiroavch)
+* **Kevin Martinez** - [Kamgmc](https://github.com/kamgmc/)
