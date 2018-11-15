@@ -1,4 +1,3 @@
-Create table Facultad(
 Fac_id serial primary key,
 Fac_nombre varchar(20) not null
 )
@@ -22,6 +21,7 @@ references Facultad (Fac_id);
 Create Table Mat_Mat(
 M_M_id serial primary key,
 M_M_uc int not null,
+M_M_semestre int not null,
 M_M_horas_sem int not null,
 M_M_escuela_fk int not null,
 M_M_restringe_fk int not null,
