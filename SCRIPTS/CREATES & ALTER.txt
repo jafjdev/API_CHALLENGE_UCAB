@@ -1,0 +1,50 @@
+Create table Facultad(
+Fac_id serial primary key,
+Fac_nombre varchar(20) not null
+)
+
+Create table Materia(
+Mat_id serial primary key,
+Mat_nombre varchar(50)
+)
+
+Create table Escuela(
+Esc_id serial primary key,
+Esc_nombre varchar(50),
+Esc_facultad_fk int not null
+)
+
+alter table Escuela
+add constraint Esc_Fac_fk
+foreign key (Esc_facultad_fk)
+references Facultad (Fac_id);
+
+Create Table Mat_Mat(
+M_M_id serial primary key,
+M_M_uc int not null,
+M_M_horas_sem int not null,
+M_M_escuela_fk int not null,
+M_M_restringe_fk int not null,
+M_M_prelado_fk int not null
+)
+
+
+alter table Mat_Mat
+add constraint M_M_rest_fk
+foreign key (M_M_restringe_fk)
+references Materia(Mat_id);
+
+alter table Mat_Mat
+add constraint M_M_esc_fk
+foreign key (M_M_escuela_fk)
+references Escuela (Esc_id);
+
+alter table Mat_Mat
+add constraint M_M_esc_fk
+foreign key (M_M_escuela_fk)
+references Escuela(Esc_id);
+
+alter table Mat_Mat
+add constraint M_M_prela_fk
+foreign key (M_M_prelado_fk)
+references Materia(Mat_id);
