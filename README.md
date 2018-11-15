@@ -7,7 +7,7 @@ API en desarrollo con la finalidad de realizar la aplicacion propuesta para el r
 
 
 * [Maven](https://maven.apache.org/) - Manejo de Dependencias.
-* [JavaSDK8](https://www.java.com/es/download/) - JavaEE 8.
+* [JavaEE8](https://www.java.com/es/download/) - JavaEE 8.
 * [GlassFish](https://javaee.github.io/glassfish/) - GlassFish.
 
 ## Participantes..
