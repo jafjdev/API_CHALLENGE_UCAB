@@ -4,3 +4,5 @@
 \.idea/workspace\.xml
 
 BACKEND/\.idea/checkstyle-idea\.xml
+
+BACKEND/\.idea/vcs\.xml
