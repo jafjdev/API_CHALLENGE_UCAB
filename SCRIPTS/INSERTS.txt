@@ -1,39 +1,39 @@
-Insert into Facultad(Fac_nombre) values('Ingenieria')
+insert into Facultad(Fac_nombre) values('Ingenieria');
 
-Insert into Escuela(Esc_nombre,Esc_facultad_fk) values('Informatica',1)
+insert into Escuela(Esc_nombre,Esc_facultad_fk) values('Informatica',1);
 
-Insert into Materia(Mat_nombre) values ('Geometria plana y trigonometria')
-Insert into Materia(Mat_nombre) values ('Matematica Basica')
-Insert into Materia(Mat_nombre) values ('Introduccion a la informatica')
-Insert into Materia(Mat_nombre) values ('Identidad, Liderazgo y Compromiso I')
-Insert into Materia(Mat_nombre) values ('Comprension y Produccion de ')
-Insert into Materia(Mat_nombre) values ('Calculo I')
-Insert into Materia(Mat_nombre) values ('Logica Computacional')
-Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion I')
-Insert into Materia(Mat_nombre) values ('Identidad, Liderazgo y Compromiso II')
-Insert into Materia(Mat_nombre) values ('Calculo II')
-Insert into Materia(Mat_nombre) values ('Fisica General')
-Insert into Materia(Mat_nombre) values ('Matematicas Discretas')
-Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion II')
-Insert into Materia(Mat_nombre) values ('Calculo III')
-Insert into Materia(Mat_nombre) values ('Laboratorio de Fisica Electrica')
-Insert into Materia(Mat_nombre) values ('Fisica Electrica')
-Insert into Materia(Mat_nombre) values ('Estructura del Computador')
-Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion III')
-Insert into Materia(Mat_nombre) values ('Ecologia, Ambiente y Sustentabilidad')
-Insert into Materia(Mat_nombre) values ('Calculo IV')
-Insert into Materia(Mat_nombre) values ('Circutos Electronicos')
-Insert into Materia(Mat_nombre) values ('Sistemas de Operacion')
-Insert into Materia(Mat_nombre) values ('Ingenieria del Software')
-Insert into Materia(Mat_nombre) values ('Iteraccion Humano Computador')
-Insert into Materia(Mat_nombre) values ('Calculo Numerico')
-Insert into Materia(Mat_nombre) values ('Estadisticas y Probabilidades')
-Insert into Materia(Mat_nombre) values ('Arquitectura del Computador')
-Insert into Materia(Mat_nombre) values ('Redes de Computadores I')
-Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos')
-Insert into Materia(Mat_nombre) values ('Programacion Lineal')
-Insert into Materia(Mat_nombre) values ('Contabilidad General')
-Insert into Materia(Mat_nombre) values ('Redes de Computadores II')
-Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos II')
-Insert into Materia(Mat_nombre) values ('Metodologia del Software')
+Insert into Materia(Mat_nombre) values ('Geometria plana y trigonometria');
+Insert into Materia(Mat_nombre) values ('Matematica Basica');
+Insert into Materia(Mat_nombre) values ('Introduccion a la informatica');
+Insert into Materia(Mat_nombre) values ('Identidad, Liderazgo y Compromiso I');
+Insert into Materia(Mat_nombre) values ('Comprension y Produccion de ');
+Insert into Materia(Mat_nombre) values ('Calculo I');
+Insert into Materia(Mat_nombre) values ('Logica Computacional');
+Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion I');
+Insert into Materia(Mat_nombre) values ('Identidad, Liderazgo y Compromiso II');
+Insert into Materia(Mat_nombre) values ('Calculo II');
+Insert into Materia(Mat_nombre) values ('Fisica General');
+Insert into Materia(Mat_nombre) values ('Matematicas Discretas');
+Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion II');
+Insert into Materia(Mat_nombre) values ('Calculo III');
+Insert into Materia(Mat_nombre) values ('Laboratorio de Fisica Electrica');
+Insert into Materia(Mat_nombre) values ('Fisica Electrica');
+Insert into Materia(Mat_nombre) values ('Estructura del Computador');
+Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion III');
+Insert into Materia(Mat_nombre) values ('Ecologia, Ambiente y Sustentabilidad');
+Insert into Materia(Mat_nombre) values ('Calculo IV');
+Insert into Materia(Mat_nombre) values ('Circutos Electronicos');
+Insert into Materia(Mat_nombre) values ('Sistemas de Operacion');
+Insert into Materia(Mat_nombre) values ('Ingenieria del Software');
+Insert into Materia(Mat_nombre) values ('Iteraccion Humano Computador');
+Insert into Materia(Mat_nombre) values ('Calculo Numerico');
+Insert into Materia(Mat_nombre) values ('Estadisticas y Probabilidades');
+Insert into Materia(Mat_nombre) values ('Arquitectura del Computador');
+Insert into Materia(Mat_nombre) values ('Redes de Computadores I');
+Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos');
+Insert into Materia(Mat_nombre) values ('Programacion Lineal');
+Insert into Materia(Mat_nombre) values ('Contabilidad General');
+Insert into Materia(Mat_nombre) values ('Redes de Computadores II');
+Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos II');
+Insert into Materia(Mat_nombre) values ('Metodologia del Software');
 Insert into Materia(Mat_nombre) values ('Ingles I')

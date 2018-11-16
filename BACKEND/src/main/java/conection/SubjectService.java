@@ -18,19 +18,11 @@ public class SubjectService {
     Sql db = new Sql();
     ArrayList<Subject> subjects = new ArrayList<Subject>();
     try {
-      ResultSet rs =
-          db.sqlConn("SELECT su_id, su_code, su_type, su_Name, su_credits FROM subject");
+      ResultSet rs = db.sqlConn("SELECT mat_id, mat_nombre FROM materia");
       while (rs.next()) {
-        Subject s = new Subject();
-        int subjectId = rs.getInt("SU_id");
-        int subjectCredits = rs.getInt("SU_credits");
-        String subjectCode = rs.getString("SU_code");
-        String subjectName = rs.getString("SU_name");
-        String subjectType = rs.getString("SU_type");
-        s.set_idSubject(subjectId);
-        s.set_creditsSubject(subjectCredits);
-        s.set_codeSubject(subjectCode);
-        s.set_nameSubject(subjectName);
+        int subjectId = rs.getInt("mat_id");
+        String subjectName = rs.getString("mat_nombre");
+        Subject s = new Subject(subjectId,subjectName);
         subjects.add(s);
       }
     } catch (SQLException ex) {
