@@ -1,12 +1,12 @@
-insert into Facultad(Fac_nombre) values('Ingenieria');
+Insert into Facultad(Fac_nombre) values('Ingenieria');
 
-insert into Escuela(Esc_nombre,Esc_facultad_fk) values('Informatica',1);
+Insert into Escuela(Esc_nombre,Esc_facultad_fk) values('Informatica',1);
 
 Insert into Materia(Mat_nombre) values ('Geometria plana y trigonometria');
 Insert into Materia(Mat_nombre) values ('Matematica Basica');
 Insert into Materia(Mat_nombre) values ('Introduccion a la informatica');
 Insert into Materia(Mat_nombre) values ('Identidad, Liderazgo y Compromiso I');
-Insert into Materia(Mat_nombre) values ('Comprension y Produccion de ');
+Insert into Materia(Mat_nombre) values ('Comprension y Produccion de Textos');
 Insert into Materia(Mat_nombre) values ('Calculo I');
 Insert into Materia(Mat_nombre) values ('Logica Computacional');
 Insert into Materia(Mat_nombre) values ('Algoritmos y Programacion I');
@@ -31,9 +31,38 @@ Insert into Materia(Mat_nombre) values ('Estadisticas y Probabilidades');
 Insert into Materia(Mat_nombre) values ('Arquitectura del Computador');
 Insert into Materia(Mat_nombre) values ('Redes de Computadores I');
 Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos');
+Insert into Materia(Mat_nombre) values ('Curso Servicio Comunitario');
 Insert into Materia(Mat_nombre) values ('Programacion Lineal');
 Insert into Materia(Mat_nombre) values ('Contabilidad General');
 Insert into Materia(Mat_nombre) values ('Redes de Computadores II');
 Insert into Materia(Mat_nombre) values ('Sistemas de Bases de Datos II');
 Insert into Materia(Mat_nombre) values ('Metodologia del Software');
-Insert into Materia(Mat_nombre) values ('Ingles I')
+Insert into Materia(Mat_nombre) values ('Ingles I');
+Insert into Materia(Mat_nombre) values ('Servicio Comunitario');
+Insert into Materia(Mat_nombre) values ('Investigación de Operaciones');
+Insert into Materia(Mat_nombre) values ('Redes de Computadoras III');
+Insert into Materia(Mat_nombre) values ('Seminario de Trabajo de Grado');
+Insert into Materia(Mat_nombre) values ('Desarrollo del Software');
+Insert into Materia(Mat_nombre) values ('Ingenieria Economica');
+Insert into Materia(Mat_nombre) values ('Ingles II');
+Insert into Materia(Mat_nombre) values ('Electiva');
+Insert into Materia(Mat_nombre) values ('Electiva');
+Insert into Materia(Mat_nombre) values ('Seguridad Computacional');
+Insert into Materia(Mat_nombre) values ('Sistemas Distribuidos');
+Insert into Materia(Mat_nombre) values ('Pasantia');
+Insert into Materia(Mat_nombre) values ('Emprendimiento');
+Insert into Materia(Mat_nombre) values ('Ingles Tecnico');
+Insert into Materia(Mat_nombre) values ('Evaluacion de Sistemas Informaticos');
+Insert into Materia(Mat_nombre) values ('Etica Profesional');
+Insert into Materia(Mat_nombre) values ('Electiva');
+Insert into Materia(Mat_nombre) values ('Trabajo de Grado');
+Insert into Materia(Mat_nombre) values ('Trabajo Instrumental de Grado');
+Insert into Materia(Mat_nombre) values ('Gestion de Proyectos de Software');
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia)
+values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),(Select));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia)
+values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Geometria plana y trigonometria'),
+		(Select Mat_id from Materia where Mat_nombre=''));
