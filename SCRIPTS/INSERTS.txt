@@ -25,7 +25,7 @@ Insert into Materia(Mat_nombre) values ('Calculo IV');
 Insert into Materia(Mat_nombre) values ('Circutos Electronicos');
 Insert into Materia(Mat_nombre) values ('Sistemas de Operacion');
 Insert into Materia(Mat_nombre) values ('Ingenieria del Software');
-Insert into Materia(Mat_nombre) values ('Iteraccion Humano Computador');
+Insert into Materia(Mat_nombre) values ('Interaccion Humano Computador');
 Insert into Materia(Mat_nombre) values ('Calculo Numerico');
 Insert into Materia(Mat_nombre) values ('Estadisticas y Probabilidades');
 Insert into Materia(Mat_nombre) values ('Arquitectura del Computador');
@@ -40,7 +40,7 @@ Insert into Materia(Mat_nombre) values ('Metodologia del Software');
 Insert into Materia(Mat_nombre) values ('Ingles I');
 Insert into Materia(Mat_nombre) values ('Servicio Comunitario');
 Insert into Materia(Mat_nombre) values ('Investigación de Operaciones');
-Insert into Materia(Mat_nombre) values ('Redes de Computadoras III');
+Insert into Materia(Mat_nombre) values ('Redes de Computadores III');
 Insert into Materia(Mat_nombre) values ('Seminario de Trabajo de Grado');
 Insert into Materia(Mat_nombre) values ('Desarrollo del Software');
 Insert into Materia(Mat_nombre) values ('Ingenieria Economica');
@@ -59,10 +59,238 @@ Insert into Materia(Mat_nombre) values ('Trabajo de Grado');
 Insert into Materia(Mat_nombre) values ('Trabajo Instrumental de Grado');
 Insert into Materia(Mat_nombre) values ('Gestion de Proyectos de Software');
 
-Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia)
-values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),(Select));
 
-Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia)
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
 values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
 		(Select Mat_id from Materia where Mat_nombre='Geometria plana y trigonometria'),
-		(Select Mat_id from Materia where Mat_nombre=''));
+		(Select Mat_id from Materia where Mat_nombre='Calculo I'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Geometria plana y trigonometria'),
+		(Select Mat_id from Materia where Mat_nombre='Fisica General'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Matematica Basica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo I'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Matematica Basica'),
+		(Select Mat_id from Materia where Mat_nombre='Fisica General'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Matematica Basica'),
+		(Select Mat_id from Materia where Mat_nombre='Logica Computacional'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Introduccion a la informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Logica Computacional'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(3,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Identidad, Liderazgo y Compromiso I'),
+		(Select Mat_id from Materia where Mat_nombre='Identidad, Liderazgo y Compromiso II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,1,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Comprension y Produccion de Textos'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(9,2,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo I'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,2,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Logica Computacional'),
+		(Select Mat_id from Materia where Mat_nombre='Matematicas Discretas'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,2,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion I'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(3,2,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Identidad, Liderazgo y Compromiso II'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,3,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo II'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo III'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(6,3,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Fisica General'),
+		(Select Mat_id from Materia where Mat_nombre='Fisica Electrica'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,3,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Matematicas Discretas'),
+		(Select Mat_id from Materia where Mat_nombre='Circutos Electronicos'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,3,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion II'),
+		(Select Mat_id from Materia where Mat_nombre='Estructura del Computador'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,3,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion II'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion III'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo III'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo IV'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo III'),
+		(Select Mat_id from Materia where Mat_nombre='Estadisticas y Probabilidades'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(3,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Laboratorio de Fisica Electrica'),
+		(Select Mat_id from Materia where Mat_nombre='Circutos Electronicos'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(6,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Fisica Electrica'),
+		(Select Mat_id from Materia where Mat_nombre='Circutos Electronicos'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Estructura del Computador'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Operacion'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,4,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Algoritmos y Programacion III'),
+		(Select Mat_id from Materia where Mat_nombre='Ingenieria del Software'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(3,4,(Select Esc_id from Escuela where Esc_nombre='Ecologia'),
+		(Select Mat_id from Materia where Mat_nombre='Ecologia, Ambiente y Sustentabilidad'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo IV'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo Numerico'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(7,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo IV'),
+		(Select Mat_id from Materia where Mat_nombre='Programacion Lineal'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Circutos Electronicos'),
+		(Select Mat_id from Materia where Mat_nombre='Arquitectura del Computador'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Operacion'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores I'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Interaccion Humano Computador'),
+		(Select Mat_id from Materia where Mat_nombre='Metodologia del Software'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,5,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Ingenieria del Software'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Bases de Datos'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Calculo Numerico'),
+		(Select Mat_id from Materia where Mat_nombre='Investigación de Operaciones'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Estadisticas y Probabilidades'),
+		(Select Mat_id from Materia where Mat_nombre='Investigación de Operaciones'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Arquitectura del Computador'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores I'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores I'),
+		(Select Mat_id from Materia where Mat_nombre='Seguridad Computacional'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Bases de Datos I'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Bases de Datos II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Bases de Datos I'),
+		(Select Mat_id from Materia where Mat_nombre='Metodologia del Software'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(0,6,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Curso Servicio Comunitario'),
+		(Select Mat_id from Materia where Mat_nombre='Servicio Comunitario'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Programacion Lineal'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(8,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores II'),
+		(Select Mat_id from Materia where Mat_nombre='Redes de Computadores III'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(6,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Metodologia del Software'),
+		(Select Mat_id from Materia where Mat_nombre='Seminario de Trabajo de Grado'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(6,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Metodologia del Software'),
+		(Select Mat_id from Materia where Mat_nombre='Desarrollo del Software'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Sistemas de Bases de Datos II'),
+		(Select Mat_id from Materia where Mat_nombre='Desarrollo del Software'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(4,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Contabilidad General'),
+		(Select Mat_id from Materia where Mat_nombre='Ingenieria Economica'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Ingles I'),
+		(Select Mat_id from Materia where Mat_nombre='Ingles II'));
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(0,7,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Servicio Comunitario'),
+		null);
+
+Insert into Mat_Mat(M_M_uc,M_M_semestre,M_M_escuela_fk,M_M_materia_fk,M_M_restringe_fk)
+values(5,8,(Select Esc_id from Escuela where Esc_nombre='Informatica'),
+		(Select Mat_id from Materia where Mat_nombre='Investigación de Operaciones'),
+		(Select Mat_id from Materia where Mat_nombre='Evaluacion de Sistemas Informaticos'));
