@@ -24,9 +24,9 @@ M_M_id serial primary key,
 M_M_uc int not null,
 M_M_semestre int not null,
 M_M_escuela_fk int not null,
-M_M_restringe_fk,
-M_M_materia_fk,
-)
+M_M_restringe_fk int,
+M_M_materia_fk int
+);
 
 alter table Mat_Mat
 add constraint M_M_rest_fk
@@ -41,5 +41,5 @@ references Escuela (Esc_id);
 
 alter table Mat_Mat
 add constraint M_M_prela_fk
-foreign key (M_M_prelado_fk)
+foreign key (M_M_materia_fk)
 references Materia(Mat_id);
