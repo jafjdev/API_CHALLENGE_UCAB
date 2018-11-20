@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BACKEND.iml" filepath="$PROJECT_DIR$/.idea/BACKEND.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myart.iml" filepath="$PROJECT_DIR$/myart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new.iml" filepath="$PROJECT_DIR$/new.iml" />
+    </modules>
+  </component>
+</project>

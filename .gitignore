@@ -6,3 +6,5 @@
 BACKEND/\.idea/checkstyle-idea\.xml
 
 BACKEND/\.idea/vcs\.xml
+
+BACKEND/\.idea/google-java-format\.xml
