@@ -6,15 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="BACKEND" />
-        <module name="myart" />
-        <module name="new" />
+        <module name="NEWMAVEN" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="BACKEND" target="1.5" />
-      <module name="myart" target="1.5" />
-      <module name="new" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>
