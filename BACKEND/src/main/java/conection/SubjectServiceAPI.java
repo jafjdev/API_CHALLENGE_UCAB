@@ -6,6 +6,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
@@ -33,7 +34,7 @@ public class SubjectServiceAPI {
 
     @Path("/{id}")
     @GET
-    @Produces
+    @Produces(MediaType.APPLICATION_JSON)
     public Response getSubjectsBycholl(@PathParam("id") int id) {
         String query = "SELECT mat_id,mat_nombre,m_m_uc,m_m_restringe_fk" +
                 " FROM mat_mat,materia,escuela" +

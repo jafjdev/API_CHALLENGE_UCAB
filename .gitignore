@@ -10,3 +10,5 @@ BACKEND/\.idea/vcs\.xml
 BACKEND/\.idea/google-java-format\.xml
 
 BACKEND/\.idea/artifacts/NEWMAVEN_war_exploded\.xml
+
+BACKEND/\.idea/checkstyleidea-libs/readme\.txt
